@@ -1,68 +1,77 @@
-/*
-Syntax error: File to import not found or unreadable: susy.
-              Load paths:
-                /Users/Abyo/ffxiv-creator/sass
-                /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/frameworks/blueprint/stylesheets
-                /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 4 of /Users/Abyo/ffxiv-creator/sass/_base.scss
-        from line 11 of /Users/Abyo/ffxiv-creator/sass/screen.scss
+/*     _________  _______   __    _____             __
+ *    / __/ __/ |/_/  _/ | / /___/ ___/______ ___ _/ /____  ____
+ *   / _// _/_>  <_/ / | |/ /___/ /__/ __/ -_) _ `/ __/ _ \/ __/
+ *  /_/ /_/ /_/|_/___/ |___/    \___/_/  \__/\_,_/\__/\___/_/
+ */
+/* -------------------------------------------------------------------------*/
+/* Layout */
+/* line 7, ../sass/universals.scss */
+main,
+header,
+section,
+article,
+aside,
+nav,
+footer {
+  display: block;
+}
 
-1: /Users/Abyo/ffxiv-creator/sass/screen.scss
+/* line 11, ../sass/universals.scss */
+em {
+  font-style: italic;
+}
 
-Backtrace:
-/Users/Abyo/ffxiv-creator/sass/_base.scss:4
-/Users/Abyo/ffxiv-creator/sass/screen.scss:11
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/import_node.rb:45:in `import'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:215:in `visit_import'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:225:in `block in visit_import'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:225:in `map'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/root_node.rb:20:in `render'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/engine.rb:315:in `_render'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/engine.rb:262:in `render'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/bin/compass:23:in `load'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: susy.\A               Load paths:\A                 /Users/Abyo/ffxiv-creator/sass\A                 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 4 of /Users/Abyo/ffxiv-creator/sass/_base.scss\A         from line 11 of /Users/Abyo/ffxiv-creator/sass/screen.scss\A \A 1: /Users/Abyo/ffxiv-creator/sass/screen.scss"; }
+/* line 15, ../sass/universals.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 19, ../sass/universals.scss */
+body {
+  margin: 0 auto;
+  font-size: 62.5%;
+  background-color: #fff;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGNvdW50PScxMDAlJyBoZWlnaHQ9JzEwMCUnPgoJPGNpcmNsZSBjeD0nNTAlJyBjeT0nNTAlJyByPSc1JScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nI2Q5NDc0NycgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9JzUwJScgcj0nMTAlJyBmaWxsLW9wYWNpdHk9Jy4yJyBmaWxsPScjZDk0NzQ3JyAvPgoJPGNpcmNsZSBjeD0nNTAlJyBjeT0nNTAlJyByPScxNSUnIGZpbGwtb3BhY2l0eT0nLjInIGZpbGw9JyNkOTQ3NDcnIC8+Cgk8Y2lyY2xlIGN4PSc1MCUnIGN5PSc1MCUnIHI9JzIwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nI2Q5NDc0NycgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9JzUwJScgcj0nMjUlJyBmaWxsLW9wYWNpdHk9Jy4yJyBmaWxsPScjZDk0NzQ3JyAvPgoJPGNpcmNsZSBjeD0nNTAlJyBjeT0nNTAlJyByPSczMCUnIGZpbGwtb3BhY2l0eT0nLjInIGZpbGw9JyNkOTQ3NDcnIC8+Cgk8Y2lyY2xlIGN4PSc1MCUnIGN5PSc1MCUnIHI9JzM1JScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nI2Q5NDc0NycgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9JzUwJScgcj0nNDAlJyBmaWxsLW9wYWNpdHk9Jy4yJyBmaWxsPScjZDk0NzQ3JyAvPgoJPGNpcmNsZSBjeD0nNTAlJyBjeT0nNTAlJyByPSc0NSUnIGZpbGwtb3BhY2l0eT0nLjInIGZpbGw9JyNkOTQ3NDcnIC8+Cgk8Y2lyY2xlIGN4PSc1MCUnIGN5PSc1MCUnIHI9JzUwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nI2Q5NDc0NycgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9Jy0xMCUnIHI9JzIwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzM3NTFiOCcgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9Jy0xMCUnIHI9JzMwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzM3NTFiOCcgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9Jy0xMCUnIHI9JzQwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzM3NTFiOCcgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9Jy0xMCUnIHI9JzUwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzM3NTFiOCcgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9Jy0xMCUnIHI9JzYwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzM3NTFiOCcgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9Jy0xMCUnIHI9JzcwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzM3NTFiOCcgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9Jy0xMCUnIHI9JzgwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzM3NTFiOCcgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9Jy0xMCUnIHI9JzkwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzM3NTFiOCcgLz4KCTxjaXJjbGUgY3g9JzUwJScgY3k9Jy0xMCUnIHI9JzEwMCUnIGZpbGwtb3BhY2l0eT0nLjInIGZpbGw9JyMzNzUxYjgnIC8+Cgk8Y2lyY2xlIGN4PScwJyBjeT0nMCcgcj0nMTAlJyBmaWxsLW9wYWNpdHk9Jy4yJyBmaWxsPScjOTA0YmRiJyAvPgoJPGNpcmNsZSBjeD0nMCcgY3k9JzAnIHI9JzIwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzkwNGJkYicgLz4KCTxjaXJjbGUgY3g9JzAnIGN5PScwJyByPSczMCUnIGZpbGwtb3BhY2l0eT0nLjInIGZpbGw9JyM5MDRiZGInIC8+Cgk8Y2lyY2xlIGN4PScwJyBjeT0nMCcgcj0nNDAlJyBmaWxsLW9wYWNpdHk9Jy4yJyBmaWxsPScjOTA0YmRiJyAvPgoJPGNpcmNsZSBjeD0nMCcgY3k9JzAnIHI9JzUwJScgZmlsbC1vcGFjaXR5PScuMicgZmlsbD0nIzkwNGJkYicgLz4KCTxjaXJjbGUgY3g9JzAnIGN5PScwJyByPSc2MCUnIGZpbGwtb3BhY2l0eT0nLjInIGZpbGw9JyM5MDRiZGInIC8+Cgk8Y2lyY2xlIGN4PScwJyBjeT0nMCcgcj0nNzAlJyBmaWxsLW9wYWNpdHk9Jy4yJyBmaWxsPScjOTA0YmRiJyAvPgoJPGNpcmNsZSBjeD0nMTAwJScgY3k9JzAnIHI9JzEwJScgZmlsbC1vcGFjaXR5PScuMScgZmlsbD0nIzMzZjA0YycgLz4KCTxjaXJjbGUgY3g9JzEwMCUnIGN5PScwJyByPScyMCUnIGZpbGwtb3BhY2l0eT0nLjEnIGZpbGw9JyMzM2YwNGMnIC8+Cgk8Y2lyY2xlIGN4PScxMDAlJyBjeT0nMCcgcj0nMzAlJyBmaWxsLW9wYWNpdHk9Jy4xJyBmaWxsPScjMzNmMDRjJyAvPgoJPGNpcmNsZSBjeD0nMTAwJScgY3k9JzAnIHI9JzQwJScgZmlsbC1vcGFjaXR5PScuMScgZmlsbD0nIzMzZjA0YycgLz4KCTxjaXJjbGUgY3g9JzEwMCUnIGN5PScwJyByPSc1MCUnIGZpbGwtb3BhY2l0eT0nLjEnIGZpbGw9JyMzM2YwNGMnIC8+Cgk8Y2lyY2xlIGN4PScxMDAlJyBjeT0nMCcgcj0nNjAlJyBmaWxsLW9wYWNpdHk9Jy4xJyBmaWxsPScjMzNmMDRjJyAvPgoJPGNpcmNsZSBjeD0nMTAwJScgY3k9JzAnIHI9JzcwJScgZmlsbC1vcGFjaXR5PScuMScgZmlsbD0nIzMzZjA0YycgLz4KCTxjaXJjbGUgY3g9JzEwMCUnIGN5PScxMDAlJyByPScxMCUnIGZpbGwtb3BhY2l0eT0nLjEnIGZpbGw9JyNlM2UzNTInIC8+Cgk8Y2lyY2xlIGN4PScxMDAlJyBjeT0nMTAwJScgcj0nMjAlJyBmaWxsLW9wYWNpdHk9Jy4xJyBmaWxsPScjZTNlMzUyJyAvPgoJPGNpcmNsZSBjeD0nMTAwJScgY3k9JzEwMCUnIHI9JzMwJScgZmlsbC1vcGFjaXR5PScuMScgZmlsbD0nI2UzZTM1MicgLz4KCTxjaXJjbGUgY3g9JzEwMCUnIGN5PScxMDAlJyByPSc0MCUnIGZpbGwtb3BhY2l0eT0nLjEnIGZpbGw9JyNlM2UzNTInIC8+Cgk8Y2lyY2xlIGN4PScxMDAlJyBjeT0nMTAwJScgcj0nNTAlJyBmaWxsLW9wYWNpdHk9Jy4xJyBmaWxsPScjZTNlMzUyJyAvPgoJPGNpcmNsZSBjeD0nMTAwJScgY3k9JzEwMCUnIHI9JzYwJScgZmlsbC1vcGFjaXR5PScuMScgZmlsbD0nI2UzZTM1MicgLz4KCTxjaXJjbGUgY3g9JzEwMCUnIGN5PScxMDAlJyByPSc3MCUnIGZpbGwtb3BhY2l0eT0nLjEnIGZpbGw9JyNlM2UzNTInIC8+Cgk8Y2lyY2xlIGN4PScwJScgY3k9JzEwMCUnIHI9JzEwJScgZmlsbC1vcGFjaXR5PScuMScgZmlsbD0nI2ViOWMzNCcgLz4KCTxjaXJjbGUgY3g9JzAlJyBjeT0nMTAwJScgcj0nMjAlJyBmaWxsLW9wYWNpdHk9Jy4xJyBmaWxsPScjZWI5YzM0JyAvPgoJPGNpcmNsZSBjeD0nMCUnIGN5PScxMDAlJyByPSczMCUnIGZpbGwtb3BhY2l0eT0nLjEnIGZpbGw9JyNlYjljMzQnIC8+Cgk8Y2lyY2xlIGN4PScwJScgY3k9JzEwMCUnIHI9JzQwJScgZmlsbC1vcGFjaXR5PScuMScgZmlsbD0nI2ViOWMzNCcgLz4KCTxjaXJjbGUgY3g9JzAlJyBjeT0nMTAwJScgcj0nNTAlJyBmaWxsLW9wYWNpdHk9Jy4xJyBmaWxsPScjZWI5YzM0JyAvPgoJPGNpcmNsZSBjeD0nMCUnIGN5PScxMDAlJyByPSc2MCUnIGZpbGwtb3BhY2l0eT0nLjEnIGZpbGw9JyNlYjljMzQnIC8+Cgk8Y2lyY2xlIGN4PScwJScgY3k9JzEwMCUnIHI9JzcwJScgZmlsbC1vcGFjaXR5PScuMScgZmlsbD0nI2ViOWMzNCcgLz4KPC9zdmc+);
+  *zoom: 1;
+}
+
+/* line 27, ../sass/universals.scss */
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted #019875;
+}
+
+/* line 32, ../sass/universals.scss */
+::selection {
+  color: #fff;
+  background: #f5cc3f;
+}
+
+/* line 37, ../sass/universals.scss */
+::-moz-selection {
+  color: #fff;
+  background: #f5cc3f;
+}
+
+/* line 1, ../sass/mobile-up.scss */
+.creatorContainer {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0 15px black;
+  -moz-box-shadow: 0 0 15px black;
+  box-shadow: 0 0 15px black;
+}
+
+/* line 16, ../sass/mobile-up.scss */
+.headerTout {
+  margin: 1em 0;
+  padding: 0;
+  font: 400 4em/1 Quicksand, "Century Gothic", Arial;
+  color: #333;
+  text-align: center;
+}
