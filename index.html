@@ -22,13 +22,45 @@
 	
 		<header class="header">
 			<h1 class="headerTout">Final Fantasy XIV Character Randomizer</h1>
-			<button class="buttonShare facebookShare" type="button"></button>
-			<button class="buttonShare twitterShare" type="button"></button>
-			<button class="buttonShare googleShare" type="button"></button>
+			<button class="buttonShare facebookShare transition-3s" type="button"></button>
+			<button class="buttonShare twitterShare transition-3s" type="button"></button>
+			<button class="buttonShare googleShare transition-3s" type="button"></button>
 		</header>
 		
 		<main class="mainContainer" role="main">
 			<h2 class="introduction">The world of Eorzea awaits eager adventurers, but the pure amount of choice available in the game can be overwhelming to some players. Enter the Final Fantasy XIV Character TKTKTK. Enter a few options on your preferred character type, and the TKTKTK will decide your path for you. While it can't farm gil, it can take the stress out of which race or job to take.</h2>
+			
+			<section class="raceContainer">
+				<section class="raceCheckbox">
+					<input type="checkbox" id="allRaces" class="checkBox" name="allRaces" value="all" checked />
+					<label for="allRaces" class="raceLabel">All</label>
+				</section>
+				<section class="raceCheckbox elezenContainer">
+					<aside class="elezenPortrait racePortrait racePortraitReveal transition-3s"></aside>
+					<input type="checkbox" id="elezen" class="checkBox" name="race" value="elezen" checked />
+					<label for="elezen" class="raceLabel">Elezen</label>
+				</section>
+				<section class="raceCheckbox hyurContainer">
+					<aside class="hyurPortrait racePortrait racePortraitReveal transition-3s"></aside>
+					<input type="checkbox" id="hyur" class="checkBox" name="race" value="hyur" checked />
+					<label for="hyur" class="raceLabel">Hyur</label>
+				</section>
+				<section class="raceCheckbox lalafellContainer">
+					<aside class="lalafellPortrait racePortrait racePortraitReveal transition-3s"></aside>
+					<input type="checkbox" id="lalafell" class="checkBox" name="race" value="lalafell" checked />
+					<label for="lalafell" class="raceLabel">Lalafell</label>
+				</section>
+				<section class="raceCheckbox miqoteContainer">
+					<aside class="miqotePortrait racePortrait racePortraitReveal transition-3s"></aside>
+					<input type="checkbox" id="miqote" class="checkBox" name="race" value="miqote" checked />
+					<label for="miqote" class="raceLabel">Miqo&rsquo;te</label>
+				</section>
+				<section class="raceCheckbox miqoteContainer">
+					<aside class="roegadynPortrait racePortrait racePortraitReveal transition-3s"></aside>
+					<input type="checkbox" id="roegadyn" class="checkBox" name="race" value="roegadyn" checked />
+					<label for="roegadyn" class="raceLabel">Roegadyn</label>
+				</section>
+			</section>
 		</main>
 	
 	</section>
