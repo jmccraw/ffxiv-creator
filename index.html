@@ -30,35 +30,16 @@
 		<main class="mainContainer" role="main">
 			<h2 class="introduction">The world of Eorzea awaits eager adventurers, but the pure amount of choice available in the game can be overwhelming to some players. Enter the Final Fantasy XIV Character TKTKTK. Enter a few options on your preferred character type, and the TKTKTK will decide your path for you. While it can't farm gil, it can take the stress out of which race or job to take.</h2>
 			
-			<section class="raceContainer">
-				<section class="raceCheckbox checkBoxAll">
-					<input type="checkbox" id="allRaces" class="checkBox" name="allRaces" value="all" checked />
-					<label for="allRaces" class="raceLabel">All</label>
+			<section class="sexContainer">
+				<section class="sexCheckbox">
+					<aside class="femalePortrait sexPortrait sexPortraitReveal transition-3s"></aside>
+					<input type="checkbox" id="female" class="checkBox" name="female" value="female" checked />
+					<label for="female" class="sexLabel">Female</label>
 				</section>
-				<section class="raceCheckbox elezenContainer">
-					<aside class="elezenPortrait racePortrait racePortraitReveal transition-3s"></aside>
-					<input type="checkbox" id="elezen" class="checkBox" name="race" value="elezen" checked />
-					<label for="elezen" class="raceLabel">Elezen</label>
-				</section>
-				<section class="raceCheckbox hyurContainer">
-					<aside class="hyurPortrait racePortrait racePortraitReveal transition-3s"></aside>
-					<input type="checkbox" id="hyur" class="checkBox" name="race" value="hyur" checked />
-					<label for="hyur" class="raceLabel">Hyur</label>
-				</section>
-				<section class="raceCheckbox lalafellContainer">
-					<aside class="lalafellPortrait racePortrait racePortraitReveal transition-3s"></aside>
-					<input type="checkbox" id="lalafell" class="checkBox" name="race" value="lalafell" checked />
-					<label for="lalafell" class="raceLabel">Lalafell</label>
-				</section>
-				<section class="raceCheckbox miqoteContainer">
-					<aside class="miqotePortrait racePortrait racePortraitReveal transition-3s"></aside>
-					<input type="checkbox" id="miqote" class="checkBox" name="race" value="miqote" checked />
-					<label for="miqote" class="raceLabel">Miqo&rsquo;te</label>
-				</section>
-				<section class="raceCheckbox miqoteContainer">
-					<aside class="roegadynPortrait racePortrait racePortraitReveal transition-3s"></aside>
-					<input type="checkbox" id="roegadyn" class="checkBox" name="race" value="roegadyn" checked />
-					<label for="roegadyn" class="raceLabel">Roegadyn</label>
+				<section class="sexCheckbox">
+					<aside class="malePortrait sexPortrait sexPortraitReveal transition-3s"></aside>
+					<input type="checkbox" id="male" class="checkBox" name="male" value="male" checked />
+					<label for="male" class="sexLabel">Male</label>
 				</section>
 			</section>
 			
@@ -67,30 +48,83 @@
 					<input type="checkbox" id="allRaces" class="checkBox" name="allRaces" value="all" checked />
 					<label for="allRaces" class="raceLabel">All</label>
 				</section>
-				<section class="raceCheckbox elezenContainer">
+				<section class="raceCheckbox">
 					<aside class="elezenPortrait racePortrait racePortraitReveal transition-3s"></aside>
 					<input type="checkbox" id="elezen" class="checkBox" name="race" value="elezen" checked />
 					<label for="elezen" class="raceLabel">Elezen</label>
 				</section>
-				<section class="raceCheckbox hyurContainer">
+				<section class="raceCheckbox">
 					<aside class="hyurPortrait racePortrait racePortraitReveal transition-3s"></aside>
 					<input type="checkbox" id="hyur" class="checkBox" name="race" value="hyur" checked />
 					<label for="hyur" class="raceLabel">Hyur</label>
 				</section>
-				<section class="raceCheckbox lalafellContainer">
+				<section class="raceCheckbox">
 					<aside class="lalafellPortrait racePortrait racePortraitReveal transition-3s"></aside>
 					<input type="checkbox" id="lalafell" class="checkBox" name="race" value="lalafell" checked />
 					<label for="lalafell" class="raceLabel">Lalafell</label>
 				</section>
-				<section class="raceCheckbox miqoteContainer">
+				<section class="raceCheckbox">
 					<aside class="miqotePortrait racePortrait racePortraitReveal transition-3s"></aside>
 					<input type="checkbox" id="miqote" class="checkBox" name="race" value="miqote" checked />
 					<label for="miqote" class="raceLabel">Miqo&rsquo;te</label>
 				</section>
-				<section class="raceCheckbox miqoteContainer">
+				<section class="raceCheckbox">
 					<aside class="roegadynPortrait racePortrait racePortraitReveal transition-3s"></aside>
 					<input type="checkbox" id="roegadyn" class="checkBox" name="race" value="roegadyn" checked />
 					<label for="roegadyn" class="raceLabel">Roegadyn</label>
+				</section>
+			</section>
+			
+			<section class="jobContainer">
+				<section class="jobCheckbox checkBoxAll">
+					<input type="checkbox" id="allJobs" class="checkBox" name="allJobs" value="all" checked />
+					<label for="allJobs" class="raceLabel">All</label>
+				</section>
+				<section class="jobCheckbox">
+					<aside class="jobModal"></aside>
+					<input type="checkbox" id="bard" class="checkBox" name="job" value="bard" checked />
+					<label for="bard" class="jobLabel">Bard</label>
+				</section>
+				<section class="jobCheckbox">
+					<aside class="jobModal"></aside>
+					<input type="checkbox" id="blackmage" class="checkBox" name="job" value="blackmage" checked />
+					<label for="blackmage" class="jobLabel">Black Mage</label>
+				</section>
+				<section class="jobCheckbox">
+					<aside class="jobModal"></aside>
+					<input type="checkbox" id="dragoon" class="checkBox" name="job" value="dragoon" checked />
+					<label for="dragoon" class="jobLabel">Dragoon</label>
+				</section>
+				<section class="jobCheckbox">
+					<aside class="jobModal"></aside>
+					<input type="checkbox" id="monk" class="checkBox" name="job" value="monk" checked />
+					<label for="monk" class="jobLabel">Monk</label>
+				</section>
+				<br />
+				<section class="jobCheckbox jobCheckboxBottomRow">
+					<aside class="jobModal"></aside>
+					<input type="checkbox" id="paladin" class="checkBox" name="job" value="paladin" checked />
+					<label for="paladin" class="jobLabel">Paladin</label>
+				</section>
+				<section class="jobCheckbox jobCheckboxBottomRow">
+					<aside class="jobModal"></aside>
+					<input type="checkbox" id="scholar" class="checkBox" name="job" value="scholar" checked />
+					<label for="scholar" class="jobLabel">Scholar</label>
+				</section>
+				<section class="jobCheckbox jobCheckboxBottomRow">
+					<aside class="jobModal"></aside>
+					<input type="checkbox" id="summoner" class="checkBox" name="job" value="summoner" checked />
+					<label for="summoner" class="jobLabel">Summoner</label>
+				</section>
+				<section class="jobCheckbox jobCheckboxBottomRow">
+					<aside class="jobModal"></aside>
+					<input type="checkbox" id="warrior" class="checkBox" name="job" value="warrior" checked />
+					<label for="warrior" class="jobLabel">Warrior</label>
+				</section>
+				<section class="jobCheckbox jobCheckboxBottomRow">
+					<aside class="jobModal"></aside>
+					<input type="checkbox" id="whitemage" class="checkBox" name="job" value="whitemage" checked />
+					<label for="whitemage" class="jobLabel">White Mage</label>
 				</section>
 			</section>
 		</main>
