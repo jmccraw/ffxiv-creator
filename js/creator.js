@@ -2,12 +2,35 @@
 	"use strict";
 	
 	$(".raceContainer").on("click.raceClick touchend.raceTouch", ".checkBox", function() {
-		var self = $(this).prev();
-		if (self.hasClass("racePortraitReveal")) {
-			self.removeClass("racePortraitReveal");
+		var self = $(this);
+		var races = 0;
+		if (self.prop("id") === "allRaces") {
+			var checked = false;
+			if (!self.prop("checked")) {
+				checked = true;
+			}
+			self = self.parent().parent().find(".racePortrait");
+			if (checked) {
+				self.removeClass("racePortraitReveal");
+				self.end().find(".checkBox:checked").prop("checked", false);
+			}
+			else {
+				self.addClass("racePortraitReveal");
+				self.end().find(".checkBox:not(:checked)").prop("checked", true);
+			}
 		}
+		// just toggle the portrait
 		else {
-			self.addClass("racePortraitReveal");
+			self.prev().toggleClass("racePortraitReveal");
+			self = self.parent().parent().find(".checkBox");
+			races = self.length - 1;
+			console.log("RACES: " + races);
+			if (self.parent().find(".checkBox:checked:not(#allRaces)").length === races) {
+				self.eq(0).prop("checked", true);
+			}
+			else {
+				self.eq(0).prop("checked", false);
+			}
 		}
 	});
 	

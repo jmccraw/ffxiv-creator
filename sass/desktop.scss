@@ -72,26 +72,30 @@
 }
 
 .introduction {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	font: 400 2em/1 $subhead-fonts;
+	width: 90%;
+	font: 400 1.8em/1.5 $subhead-fonts;
 	color: $font-color;
 	text-align: justify;
 }
 
 .raceContainer {
 	position: relative;
-	margin: 2em auto 0;
-	padding: 0;
+	margin: 12em auto 0;
+	padding: 2em 0 0;
 	width: 80%;
-	height: 15em;
-	background: rgba(10, 10, 255, 0.2);
+	height: 5em;
+	background: #fff;
+	@include border-radius(10px);
+	@include box-shadow(5px 5px 10px #555);
 }
 
 .racePortrait {
 	position: absolute;
-	top: -50%;
-	margin: 0 0 0 24px;
+	top: -300%;
+	left: 50%;
+	margin: 0 0 0 -25px;
 	padding: 0;
 	width: 50px;
 	height: 100px;
@@ -107,6 +111,7 @@
 }
 
 .raceCheckbox {
+	position: relative;
 	display: inline-block;
 	margin: 0 2em 0 0;
 	padding: 0;
@@ -120,6 +125,10 @@
 	margin: 0 auto;
 	text-align: center;
 	z-index: 2;
+}
+
+.checkBoxAll {
+	border-right: 1px solid #ccc;
 }
 
 .raceLabel {

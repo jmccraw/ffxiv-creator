@@ -169,28 +169,38 @@ abbr {
 
 /* line 74, ../sass/desktop.scss */
 .introduction {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  font: 400 2em/1 Georgia, Times, serif;
+  width: 90%;
+  font: 400 1.8em/1.5 Georgia, Times, serif;
   color: #333333;
   text-align: justify;
 }
 
-/* line 82, ../sass/desktop.scss */
+/* line 83, ../sass/desktop.scss */
 .raceContainer {
   position: relative;
-  margin: 2em auto 0;
-  padding: 0;
+  margin: 12em auto 0;
+  padding: 2em 0 0;
   width: 80%;
-  height: 15em;
-  background: rgba(10, 10, 255, 0.2);
+  height: 5em;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px #555555;
+  -moz-box-shadow: 5px 5px 10px #555555;
+  box-shadow: 5px 5px 10px #555555;
 }
 
-/* line 91, ../sass/desktop.scss */
+/* line 94, ../sass/desktop.scss */
 .racePortrait {
   position: absolute;
-  top: -50%;
-  margin: 0 0 0 24px;
+  top: -300%;
+  left: 50%;
+  margin: 0 0 0 -25px;
   padding: 0;
   width: 50px;
   height: 100px;
@@ -200,21 +210,22 @@ abbr {
   opacity: 0;
 }
 
-/* line 104, ../sass/desktop.scss */
+/* line 108, ../sass/desktop.scss */
 .racePortraitReveal {
   filter: alpha(opacity=100);
   opacity: 1;
 }
 
-/* line 109, ../sass/desktop.scss */
+/* line 113, ../sass/desktop.scss */
 .raceCheckbox {
+  position: relative;
   display: inline-block;
   margin: 0 2em 0 0;
   padding: 0;
   width: 13%;
 }
 
-/* line 117, ../sass/desktop.scss */
+/* line 122, ../sass/desktop.scss */
 .checkBox,
 .raceLabel {
   position: relative;
@@ -224,7 +235,12 @@ abbr {
   z-index: 2;
 }
 
-/* line 125, ../sass/desktop.scss */
+/* line 130, ../sass/desktop.scss */
+.checkBoxAll {
+  border-right: 1px solid #cccccc;
+}
+
+/* line 134, ../sass/desktop.scss */
 .raceLabel {
   font: 400 2.5em/1 ostrich-regular, ostrich-light, Arial, sans-serif;
   color: #333333;
