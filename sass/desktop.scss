@@ -1,0 +1,70 @@
+@include ostrich-light;
+@include ostrich-regular;
+@include ostrich-black;
+
+.creatorContainer,
+.header {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 80%;
+	background: #fff;
+}
+
+.creatorContainer {
+	padding-top: 10em;
+	@include box-shadow(0 0 15px #000);
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0 0 0 -50%;
+	padding: 0;
+	width: 100%;
+	height: 10em;
+	background: rgba(255, 255, 255, 0.8);
+	border-bottom: 2px solid #fff;
+}
+
+.headerFixed {
+	position: fixed;
+	@include box-shadow(0 0 15px #000);
+}
+
+.headerTout {
+	display: inline-block;
+	margin: 0.6em 0 0;
+	padding: 0 8%;
+	font: 400 4.5em/1 $header-fonts;
+	color: #333;
+	text-align: center;
+}
+
+.buttonShare {
+	margin: 0 4% 0 0;
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	background: transparent url(http://placekitten.com/32) center center no-repeat;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.buttonShare:last-child {
+	margin-right: 0;
+}
+
+.mainContainer {
+	margin: 0 auto;
+	padding: 0 2em;
+}
+
+.introduction {
+	margin: 0;
+	padding: 0;
+	font: 400 5em/1 $subhead-fonts;
+	text-align: center;
+}

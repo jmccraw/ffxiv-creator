@@ -1,22 +1,14 @@
 /*
-Syntax error: Undefined mixin 'box-shadow'.
-        on line 9 of /Users/Abyo/ffxiv-creator/sass/mobile-up.scss, in `box-shadow'
-        from line 9 of /Users/Abyo/ffxiv-creator/sass/mobile-up.scss
+Syntax error: Undefined mixin 'ostrich-light'.
+        on line 1 of /Users/Abyo/ffxiv-creator/sass/desktop.scss, in `ostrich-light'
+        from line 1 of /Users/Abyo/ffxiv-creator/sass/desktop.scss
+
+1: /Users/Abyo/ffxiv-creator/sass/desktop.scss
 
 Backtrace:
-/Users/Abyo/ffxiv-creator/sass/mobile-up.scss:9:in `box-shadow'
-/Users/Abyo/ffxiv-creator/sass/mobile-up.scss:9
+/Users/Abyo/ffxiv-creator/sass/desktop.scss:1:in `ostrich-light'
+/Users/Abyo/ffxiv-creator/sass/desktop.scss:1
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:251:in `visit_mixin'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:318:in `visit_rule'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:98:in `visit'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -45,14 +37,15 @@ Backtrace:
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:95:in `block (4 levels) in perform'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/path.rb:39:in `delete'
+/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/state/directory.rb:32:in `block in deleted'
+/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/state/directory.rb:31:in `each'
+/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/state/directory.rb:31:in `deleted'
+/Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/state/directory.rb:16:in `refresh'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
@@ -74,4 +67,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'box-shadow'.\A         on line 9 of /Users/Abyo/ffxiv-creator/sass/mobile-up.scss, in `box-shadow'\A         from line 9 of /Users/Abyo/ffxiv-creator/sass/mobile-up.scss"; }
+  content: "Syntax error: Undefined mixin 'ostrich-light'.\A         on line 1 of /Users/Abyo/ffxiv-creator/sass/desktop.scss, in `ostrich-light'\A         from line 1 of /Users/Abyo/ffxiv-creator/sass/desktop.scss\A \A 1: /Users/Abyo/ffxiv-creator/sass/desktop.scss"; }

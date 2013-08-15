@@ -8,21 +8,13 @@
 // Imports
 
 @import "base";
-@import "compass/css3";
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
 
 @import "universals";
-@import "mobile-up";
+@import "desktop";
 
-@include at-breakpoint($phone-portrait) {
-	}
-
-@include at-breakpoint($tablet) {
-	
-}
-
-@include at-breakpoint($computer) {
+@media screen and (max-width: 500px) {
 	
 }
