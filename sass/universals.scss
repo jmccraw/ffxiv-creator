@@ -41,3 +41,7 @@ abbr {
 .transition-3s {
 	@include transition(all 0.3s ease-in-out);
 }
+
+.hidden {
+	display: none;
+}

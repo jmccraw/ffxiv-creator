@@ -15,53 +15,72 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 		land,
 		hand,
 		astral = {
-			"bard": "",
-			"blackMage": "",
-			"dragoon": "",
-			"monk": "",
-			"paladin": "",
-			"scholar": "",
-			"summoner": "",
-			"warrior": "",
-			"whitemage": ""
+			"Bard": "",
+			"Black Mage": "",
+			"Dragoon": "",
+			"Monk": "",
+			"Paladin": "",
+			"Scholar": "",
+			"Summoner": "",
+			"Warrior": "",
+			"White Mage": ""
 		},
 		species = {
-			"elezen": [ "Wildwood", "Duskwight" ],
-			"hyur": [ "Midlander", "Highlander" ],
-			"miqote": [ "Seekers of the Sun", "Keepers of the Moon" ],
-			"lalafell": [ "Plainsfolk", "Dunesfolk" ],
-			"roegadyn": [ "Sea Wolves", "Hellsguard" ]
-		};
-		
-	function getSeed() {
-		$.get("http://www.random.org/integers/?", {num: "1", col: "1", min: "1", max: "3", base: "10", format: "plain", rnd: "new"}, function(randNum) {
-     var mySeed = randNum;
-
-      // Instantiate Chance with this truly random number as the seed
-      var my_seeded_chance = new Chance(mySeed);
-      console.log(my_seeded_chance.integer());
-    });
-	};
+			"Elezen": [ "Wildwood", "Duskwight" ],
+			"Hyur": [ "Midlander", "Highlander" ],
+			"Miqo'te": [ "Seekers of the Sun", "Keepers of the Moon" ],
+			"Lalafell": [ "Plainsfolk", "Dunesfolk" ],
+			"Roegadyn": [ "Sea Wolves", "Hellsguard" ]
+		},
+		images = {
+			"Elezen": [
+				"http://ffxiv-creator.com/stylesheets/images/races/male/elezen.png",
+				"http://ffxiv-creator.com/stylesheets/images/races/female/elezen.png"
+			],
+			"Hyur": [
+				"http://ffxiv-creator.com/stylesheets/images/races/male/hyur.png",
+				"http://ffxiv-creator.com/stylesheets/images/races/female/hyur.png"
+			],
+			"Miqo'te": [
+				"http://ffxiv-creator.com/stylesheets/images/races/male/miqote.png",
+				"http://ffxiv-creator.com/stylesheets/images/races/female/miqote.png"
+			],
+			"Lalafell": [
+				"http://ffxiv-creator.com/stylesheets/images/races/male/lalafell.png",
+				"http://ffxiv-creator.com/stylesheets/images/races/female/lalafell.png"
+			],
+			"Roegadyn": [
+				"http://ffxiv-creator.com/stylesheets/images/races/male/roegadyn.png",
+				"http://ffxiv-creator.com/stylesheets/images/races/female/roegadyn.png"
+			]
+		},
+		randChance,
+		resetNumber = 0,
+		shareImage = "",
+		description = "Wondering what to be in FFXIV? Tick some options and let our random character creator do the work.";
 	
-	function findSex() {
-		
-	};
-	
-	function findRace() {
-		
-	};
-	
-	function findJob() {
-		
-	};
-	
-	function findLand() {
-		
-	};
-	
-	function findHand() {
-		
-	};
+	/*
+	 * Return the third most frequently occuring random number given the max, min of 0
+	 * @param{Number} max The max integer to check against
+	 */
+	function getThird(max) {
+		var matched = false,
+			randoms = [],
+			i,
+			length;
+		while(!matched) {
+			randoms.push(randChance.natural({"min": 0, "max": max - 1}));
+			for (i = 0, length = randoms.length; i < length; ++i) {
+				if ($.grep(randoms, function(t) {
+						return t === randoms[i];
+					}).length === 3) {
+					matched = true;
+					console.log(randoms);
+					return randoms[i];
+				}
+			}
+		}
+	}
 	
 	function shareToFacebook() {
 		
@@ -76,11 +95,171 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 	};
 	
 	function activateShareTools() {
-		
+		if (sex && race) {
+			if (sex === "male") {
+				shareImage = images[race][0];
+			}
+			else {
+				shareImage = images[race][1];
+			}
+		}
+		else if (race) {
+			shareImage = images[race][getThird(2)];
+		}
+		else {
+			shareImage = "http://ffxiv-creator.com/stylesheets/images/ffxiv_logo.png";
+		}
+		$(".shareTools").removeClass("disabled");
 	};
 	
 	function compilePieces() {
+		var clan;
+		if (sex) {
+			$("#sex").html(sex + " ");
+			_gaq.push(["_trackEvent", "Sex", sex]);
+		}
+		if (race) {
+			clan = species[race][getThird(2)];
+			$("#clan").html(clan + " ");
+			$("#race").html(race + " ");
+			_gaq.push(["_trackEvent", "Race", race]);
+			_gaq.push(["_trackEvent", "Clan", clan]);
+			_gaq.push(["_trackEvent", "Race + Clan", race + " " + clan]);
+		}
+		if (job) {
+			$("#job").html(job + " ");
+			_gaq.push(["_trackEvent", "Job", job]);
+		}
+		if (land || hand) {
+			$("#optional1").removeClass("hidden");
+			if (land) {
+				$("#land").html(land);
+				_gaq.push(["_trackEvent", "Land", land]);
+			}
+			if (hand) {
+				$("#hand").html(hand);
+				_gaq.push(["_trackEvent", "Hand", hand]);
+			}
+			if (hand && land) {
+				$("#optional2").removeClass("hidden");
+				_gaq.push(["_trackEvent", "Land + Hand", land + " " + hand]);
+			}
+		}
 		
+		//astral[job];
+		
+		$(".responseContainer").removeClass("hidden");
+		
+		activateShareTools();
+		_gaq.push(["_trackEvent", "All Combined", sex + " " + race + " " + clan + " " + job +
+			" " + land + " " + hand]);
+	};
+	
+	function findHand() {
+		var hands = $(".handCheckbox").find(".checkBox:checked:not(#allHand)"),
+			length = hands.length;
+		if (length === 1) {
+			hand = hands.val();
+		}
+		else if (length > 1) {
+			hand = hands.eq(getThird(length)).val();
+		}
+		console.log("HAND: " + hand);
+		compilePieces();
+	};
+	
+	function findLand() {
+		var lands = $(".landCheckbox").find(".checkBox:checked:not(#allLand)"),
+			length = lands.length;
+		if (length === 1) {
+			land = lands.val();
+		}
+		else if (length > 1) {
+			land = lands.eq(getThird(length)).val();
+		}
+		console.log("LAND: " + land);
+		findHand();
+	};
+	
+	function findJob() {
+		var jobs = $(".jobCheckbox").find(".checkBox:checked:not(#allJobs)"),
+			length = jobs.length;
+		if (length === 1) {
+			job = jobs.val();
+		}
+		else if (length > 1) {
+			job = jobs.eq(getThird(length)).val();
+		}
+		console.log("JOB: " + job);
+		findLand();
+	};
+	
+	function findRace() {
+		var races = $(".raceCheckbox").find(".checkBox:checked:not(#allRaces)"),
+			length = races.length;
+		if (length === 1) {
+			race = races.val();
+		}
+		else if (length > 1) {
+			race = races.eq(getThird(length)).val();
+		}
+		console.log("RACE: " + race);
+		findJob();
+	};
+	
+	function findSex() {
+		var sexes = $(".sexCheckbox").find(".checkBox:checked"),
+			length = sexes.length;
+		if (length === 1) {
+			sex = sexes.eq(0).val();
+		}
+		else if (length > 1) {
+			sex = sexes.eq(getThird(length)).val();
+		}
+		console.log("SEX: " + sex);
+		findRace();
+	};
+		
+	function getSeed() {
+		try {
+			$.get("http://www.random.org/integers/?", {num: "1", col: "1", min: "1", max: "99",
+				base: "10", format: "plain", rnd: "new"}, function(randNum) {
+				// Instantiate Chance with this truly random number as the seed
+				randChance = new Chance(randNum);
+				findSex();
+			}).fail(function() {
+				_gaq.push(["_trackEvent", "Seed Failed", "On Return"]);
+				randChance = new Chance(new Date().getTime());
+				findSex();
+			});
+		} catch(err) {
+			_gaq.push(["_trackEvent", "Seed Failed", "On Error"]);
+			randChance = new Chance(new Date().getTime());
+			findSex();
+		}
+	};
+	
+	function resetCreator() {
+		sex = false;
+		race = false;
+		job = false;
+		hand = false;
+		land = false;
+		
+		$("#sex").html("");
+		$("#clan").html("");
+		$("#race").html("");
+		$("#job").html("");
+		$("#optional1").addClass("hidden");
+		$("#land").html("");
+		$("#optional2").addClass("hidden");
+		$("#hand").html("");
+		
+		$(".responseContainer").addClass("hidden");
+		
+		_gaq.push(["_trackEvent", "Creator Reset", resetNumber]);
+		
+		findSex();
 	};
 	
 	function calculateCheckboxes(self, all, portrait) {
@@ -138,7 +317,12 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 	});
 	
 	$(".mainContainer").on("click.generatorClick touchend.generatorTouch", ".generator", function() {
-		getSeed();
+		if (!randChance) {
+			getSeed();
+		}
+		else {
+			resetCreator();
+		}
 	});
 	
 })(jQuery);
