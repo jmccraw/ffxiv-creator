@@ -78,4 +78,12 @@
 		calculateCheckboxes($(this), "allJobs", false);
 	});
 	
+	$(".landContainer").on("click.landClick touchend.landTouch", ".checkBox", function() {
+		calculateCheckboxes($(this), "allLand", false);
+	});
+	
+	$(".handContainer").on("click.handClick touchend.handTouch", ".checkBox", function() {
+		calculateCheckboxes($(this), "allHand", false);
+	});
+	
 })(jQuery);
