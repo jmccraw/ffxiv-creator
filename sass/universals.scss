@@ -30,12 +30,12 @@ abbr {
 
 ::selection {
 	color: #fff;
-	background: yellow;
+	background: $background-compliment;
 }
 
 ::-moz-selection {
 	color: #fff;
-	background: yellow;
+	background: $background-compliment;
 }
 
 .transition-3s {

@@ -21,14 +21,14 @@
 	<section class="creatorContainer">
 	
 		<header class="header">
-			<h1 class="headerTout">Final Fantasy XIV Character Randomizer</h1>
+			<h1 class="headerTout">Final Fantasy XIV Character &#9794;Randomizer</h1>
 			<button class="buttonShare facebookShare transition-3s" type="button"></button>
 			<button class="buttonShare twitterShare transition-3s" type="button"></button>
 			<button class="buttonShare googleShare transition-3s" type="button"></button>
 		</header>
 		
 		<main class="mainContainer" role="main">
-			<h2 class="introduction">The world of Eorzea awaits eager adventurers, but the pure amount of choice available in the game can be overwhelming to some players. Enter the Final Fantasy XIV Character TKTKTK. Enter a few options on your preferred character type, and the TKTKTK will decide your path for you. While it can't farm gil, it can take the stress out of which race or job to take.</h2>
+			<h2 class="introduction">&#9794;The world of Eorzea awaits eager adventurers, but the pure amount of choice available in the game can be overwhelming to some players. Enter the Final Fantasy XIV Character TKTKTK. Enter a few options on your preferred character type, and the TKTKTK will decide your path for you. While it can't farm gil, it can take the stress out of which race or job to take.</h2>
 			
 			<section class="sexContainer">
 				<section class="sexCheckbox">
@@ -192,12 +192,23 @@
 					<label for="leatherworker" class="handLabel">Leatherworker</label>
 				</section>
 				<section class="handCheckboxBottomRow">
-					<aside class="handModal">Consumables</aside>
+					<aside class="handModal"></aside>
 					<input type="checkbox" id="weaver" class="checkBox" name="hand" value="weaver" checked />
 					<label for="weaver" class="handLabel">Weaver</label>
 				</section>
 			</section>
+			
+			<button class="generator" type="button" title="Activate to find your perfect, random character match">Find Perfect Match</button>
 		</main>
+		
+		<section class="responseContainer">
+			<section class="imageContainer">
+				<div class="jobResponse"></div>
+				<div class="handResponse"></div>
+				<div class="raceResponse"></div>
+			</section>
+			<h3 class="textyResponse">You should be a <span id="sex"></span> <span id="clan"></span> <span id="race"></span> <span id="job"></span> specializing in <span id="land"></span> <span id="optional">and</span> <span id="hand"></span>.</h3>
+		</section>
 	
 	</section>
 	

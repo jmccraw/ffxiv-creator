@@ -44,13 +44,13 @@ abbr {
 /* line 31, ../sass/universals.scss */
 ::selection {
   color: #fff;
-  background: yellow;
+  background: #29a489;
 }
 
 /* line 36, ../sass/universals.scss */
 ::-moz-selection {
   color: #fff;
-  background: yellow;
+  background: #29a489;
 }
 
 /* line 41, ../sass/universals.scss */
@@ -267,7 +267,7 @@ abbr {
   padding: 0;
   width: 50px;
   height: 100px;
-  background: transparent url(http://placekitten.com/50/100) center center no-repeat;
+  background: transparent url(images/races/elezen.png) center center no-repeat;
   border: none;
   filter: alpha(opacity=0);
   opacity: 0;
@@ -275,19 +275,46 @@ abbr {
 
 /* line 164, ../sass/desktop.scss */
 .sexPortrait {
-  margin-left: -50px;
-  width: 100px;
-  background-image: url(http://placehold.it/100);
+  top: -220%;
+  margin-left: -38px;
+  width: 75px;
+  height: 75px;
+  background-image: url(images/female.png);
 }
 
-/* line 171, ../sass/desktop.scss */
+/* line 172, ../sass/desktop.scss */
+.malePortrait {
+  background-image: url(images/male.png);
+}
+
+/* line 176, ../sass/desktop.scss */
+.hyurPortrait {
+  background-image: url(images/races/hyur.png);
+}
+
+/* line 180, ../sass/desktop.scss */
+.lalafellPortrait {
+  background-image: url(images/races/lalafell.png);
+}
+
+/* line 184, ../sass/desktop.scss */
+.miqotePortrait {
+  background-image: url(images/races/miqote.png);
+}
+
+/* line 188, ../sass/desktop.scss */
+.roegadynPortrait {
+  background-image: url(images/races/roegadyn.png);
+}
+
+/* line 193, ../sass/desktop.scss */
 .sexPortraitReveal,
 .racePortraitReveal {
   filter: alpha(opacity=100);
   opacity: 1;
 }
 
-/* line 182, ../sass/desktop.scss */
+/* line 204, ../sass/desktop.scss */
 .sexCheckbox,
 .raceCheckbox,
 .jobCheckbox,
@@ -303,19 +330,19 @@ abbr {
   cursor: pointer;
 }
 
-/* line 191, ../sass/desktop.scss */
+/* line 213, ../sass/desktop.scss */
 .sexCheckbox {
   margin-right: 23%;
   margin-left: 8%;
   width: 30%;
 }
 
-/* line 197, ../sass/desktop.scss */
+/* line 219, ../sass/desktop.scss */
 .sexCheckbox:last-child {
   margin-left: 0;
 }
 
-/* line 204, ../sass/desktop.scss */
+/* line 226, ../sass/desktop.scss */
 .jobCheckbox,
 .jobCheckboxBottomRow,
 .handCheckbox,
@@ -323,18 +350,18 @@ abbr {
   width: 16%;
 }
 
-/* line 209, ../sass/desktop.scss */
+/* line 231, ../sass/desktop.scss */
 .jobCheckboxBottomRow,
 .handCheckboxBottomRow {
   margin-top: 2em;
 }
 
-/* line 213, ../sass/desktop.scss */
+/* line 235, ../sass/desktop.scss */
 .landCheckbox {
   width: 21%;
 }
 
-/* line 222, ../sass/desktop.scss */
+/* line 244, ../sass/desktop.scss */
 .buttonShare:last-child,
 .sexCheckbox:last-child,
 .raceCheckbox:last-child,
@@ -344,7 +371,7 @@ abbr {
   margin-right: 0;
 }
 
-/* line 231, ../sass/desktop.scss */
+/* line 253, ../sass/desktop.scss */
 .checkBox,
 .sexLabel,
 .raceLabel,
@@ -359,12 +386,12 @@ abbr {
   z-index: 2;
 }
 
-/* line 240, ../sass/desktop.scss */
+/* line 262, ../sass/desktop.scss */
 .checkBoxAll {
   border-right: 1px solid #cccccc;
 }
 
-/* line 248, ../sass/desktop.scss */
+/* line 270, ../sass/desktop.scss */
 .sexLabel,
 .raceLabel,
 .jobLabel,
@@ -372,6 +399,37 @@ abbr {
 .handLabel {
   font: 400 2.5em/1 ostrich-regular, ostrich-light, Arial, sans-serif;
   color: #333333;
+}
+
+/* line 275, ../sass/desktop.scss */
+.generator {
+  position: relative;
+  left: 50%;
+  margin: 0.8em 0 0 -4.5em;
+  padding: 0;
+  width: 9em;
+  height: 2em;
+  font: 400 4em/1 ostrich-regular, ostrich-light, Arial, sans-serif;
+  color: #fff;
+  background: #29a489;
+  text-shadow: 1px 1px 3px #333333;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* line 291, ../sass/desktop.scss */
+.generator:hover {
+  background: #3565a8;
+}
+
+/* line 295, ../sass/desktop.scss */
+.generator:active {
+  background: #29a489;
 }
 
 /*.handModal {
