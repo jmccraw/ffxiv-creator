@@ -83,15 +83,30 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 	}
 	
 	function shareToFacebook() {
-		
+		FB.ui({
+			"method": "feed",
+			"link": "http://ffxiv-creator.com",
+			"picture": shareImage,
+			"name": "FFXIV Creator",
+			"caption": "Generate a random character based on your choices",
+			"description": $(".textyResponse").text()
+		}, function(response){});
+		_gaq.push(["_trackEvent", "Share to Facebook"]);
 	};
 	
 	function shareToTwitter() {
-		
+		var topWindow = Math.ceil(($(window).height() / 2) - 127);
+		var leftWindow = Math.ceil(($(window).width() / 2) - 300);
+		window.open("http://twitter.com/intent/tweet" +
+			"?source=tweetbutton&text=" + encodeURIComponent($(".textyResponse").text()) + "+" +
+			encodeURIComponent("http://ffxiv-creator.com #FFXIV"), "Tweet Your Random FFXIV Character",
+			"width=600,height=300,left=" + leftWindow + ",top=" + topWindow);
+		_gaq.push(["_trackEvent", "Share to Twitter"]);
 	};
 	
 	function shareToGoogle() {
 		
+		_gaq.push(["_trackEvent", "Share to Google+"]);
 	};
 	
 	function activateShareTools() {
@@ -109,7 +124,18 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 		else {
 			shareImage = "http://ffxiv-creator.com/stylesheets/images/ffxiv_logo.png";
 		}
-		$(".shareTools").removeClass("disabled");
+		$(".disabled").removeClass("disabled");
+		$(".socialTout").on("click.facebookClick touchend.facebookTouch", ".facebookButton", function(e) {
+			if (e.preventDefault) {
+				e.preventDefault();
+			}
+			shareToFacebook();
+		}).on("click.twitterClick touchend.twitterTouch", ".twitterButton", function(e) {
+			if (e.preventDefault) {
+				e.preventDefault();
+			}
+			shareToTwitter();
+		});
 	};
 	
 	function compilePieces() {
@@ -316,7 +342,10 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 		calculateCheckboxes($(this), "allHand", false);
 	});
 	
-	$(".mainContainer").on("click.generatorClick touchend.generatorTouch", ".generator", function() {
+	$(".mainContainer").on("click.generatorClick touchend.generatorTouch", ".generator", function(e) {
+		if (e.preventDefault) {
+			e.preventDefault();
+		}
 		if (!randChance) {
 			getSeed();
 		}

@@ -33,7 +33,8 @@
 	@include box-shadow(0 0 15px #000);
 }
 
-.headerTout {
+.headerTout,
+.socialTout {
 	display: inline-block;
 	margin: 0.6em 0 0;
 	padding: 0 8%;
@@ -279,14 +280,16 @@
 	color: $font-color;
 }
 
-.generator {
+.generator,
+.facebookButton,
+.twitterButton {
 	position: relative;
 	left: 50%;
 	margin: 0.8em 0 0 -4.5em;
 	padding: 0;
 	width: 9em;
 	height: 2em;
-	font: 400 4em/1 $header-fonts;
+	font: 400 4em/2.1 $header-fonts;
 	color: #fff;
 	background: $background-compliment;
 	text-shadow: 1px 1px 3px #333;
@@ -318,6 +321,71 @@
 #land,
 #hand {
 	border-bottom: 2px dotted $highlight;
+}
+
+.socialContainer {
+	position: relative;
+	margin: 0 auto;
+	padding: 2%;
+	width: 78%;
+	height: 15em;
+}
+
+.socialTout {
+	display: block;
+	padding: 0;
+	font-size: 3em;
+}
+
+.facebookButton,
+.twitterButton {
+	left: auto;
+	margin: 0 0.1em;
+	width: 4em;
+	height: 1.5em;
+	font-size: 1em;
+	line-height: 1.6;
+}
+
+.facebookButton {
+	background: #3b5998;
+}
+
+.twitterButton {
+	background: #00acee;
+}
+
+.facebookButton:hover,
+.twitterButton:hover {
+	background: #ddd;
+}
+
+.facebookButton:active {
+	background: #3b5998;
+}
+
+.twitterButton:active {
+	background: #00acee;
+}
+
+.disabled,
+.facebookButton:active .disabled,
+.facebookButton:hover .disabled,
+.twitterButton:active .disabled,
+.twitterButton:hover .disabled {
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	cursor: not-allowed;
+	background: #ddd;
+}
+
+.amazonAd {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 400px;
+	height: 170px;
+	clear: both;
 }
 
 #disqus_thread {
