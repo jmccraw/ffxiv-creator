@@ -1,0 +1,80 @@
+body {
+	background: green;
+}
+
+.creatorContainer {
+	width: 90%;
+}
+
+.headerTout {
+	font-size: 3em;
+}
+
+.sexContainer,
+.raceContainer,
+.landContainer,
+.handContainer {
+	margin-top: 9em;
+	height: 4em;
+}
+
+.jobContainer,
+.handContainer {
+	margin-top: 2em;
+	height: 13em;
+}
+
+.handContainer {
+	height: 10em;
+}
+
+.landContainer {
+	margin-top: 2em;
+}
+
+.sexPortrait,
+.racePortrait {
+	top: -380%;
+}
+
+.raceCheckbox,
+.jobCheckbox,
+.jobCheckboxBottomRow,
+.landCheckbox,
+.handCheckbox,
+.handCheckboxBottomRow {
+	margin-right: 1em;
+}
+
+.checkBox,
+.sexLabel,
+.raceLabel,
+.jobLabel,
+.landLabel,
+.handLabel {
+	font: 400 1.6em/1 "Century Gothic", Arial, sans-serif;
+}
+
+.handCheckboxBottomRow:nth-child(3n) {
+	margin-right: 3em;
+}
+
+.generator {
+	margin-left: -3.5em;
+	width: 7em;
+	height: 1.5em;
+	font-size: 3.5em;
+	line-height: 1.7;
+}
+
+.socialContainer {
+	width: 90%;
+}
+
+.socialTout {
+	font-size: 2.5em;
+}
+
+.amazonAd {
+	display: none;
+}

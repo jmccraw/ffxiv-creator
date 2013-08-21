@@ -15,6 +15,14 @@
 @import "universals";
 @import "desktop";
 
-@media screen and (max-width: 500px) {
-	
+@media screen and (max-width: 1100px) {
+	@import "collapsedDesktop";
+}
+
+@media screen and (max-width: 800px) {
+	@import "tablety";
+}
+
+@media screen and (max-width: 480px) {
+	@import "mobile";
 }

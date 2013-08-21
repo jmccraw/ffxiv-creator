@@ -57,7 +57,9 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 		randChance,
 		resetNumber = 0,
 		shareImage = "",
-		description = "Wondering what to be in FFXIV? Tick some options and let our random character creator do the work.";
+		description = "Wondering what to be in FFXIV? Tick some options and let our random character creator do the work.",
+		$response = $(".imageContainer"),
+		$textyTout = $(".textyResponse");
 	
 	/*
 	 * Return the third most frequently occuring random number given the max, min of 0
@@ -138,6 +140,32 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 		});
 	};
 	
+	function loadResponseArea() {
+		var raceImage;
+		$response.removeClass("unrevealed").addClass("opaque");
+		setTimeout(function() {
+			$response.addClass("revealed");
+		}, 500);
+		
+		// load character portrait
+		if (sex && race) {
+			if (sex === "male") {
+				raceImage = images[race][0];
+			}
+			else {
+				raceImage = images[race][1];
+			}
+		}
+		else if (race) {
+			raceImage = images[race][getThird(2)];
+		}
+		else if (sex) {
+			raceImage = images[getThird(5)][sex];
+		}
+		
+		$response.css("background-image", "url(" + raceImage + ")");
+	};
+	
 	function compilePieces() {
 		var clan;
 		if (sex) {
@@ -174,9 +202,12 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 		
 		//astral[job];
 		
-		$(".responseContainer").removeClass("hidden");
+		$textyTout.removeClass("hidden");
 		
 		activateShareTools();
+		
+		loadResponseArea();
+		
 		_gaq.push(["_trackEvent", "All Combined", sex + " " + race + " " + clan + " " + job +
 			" " + land + " " + hand]);
 	};
@@ -281,7 +312,7 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 		$("#optional2").addClass("hidden");
 		$("#hand").html("");
 		
-		$(".responseContainer").addClass("hidden");
+		$textyTout.addClass("hidden");
 		
 		_gaq.push(["_trackEvent", "Creator Reset", resetNumber]);
 		

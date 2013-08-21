@@ -40,7 +40,7 @@
 	<section class="creatorContainer">
 	
 		<header class="header">
-			<h1 class="headerTout">Final Fantasy XIV Character Randomizer v.1.2&nbsp;&nbsp;<div class="g-plus" data-action="share" data-annotation="bubble" data-height="24" data-href="http://ffxiv-creator.com"></div></h1>
+			<h1 class="headerTout">Final Fantasy XIV Character Randomizer v.1.4&nbsp;&nbsp;<div class="g-plus" data-action="share" data-annotation="bubble" data-height="24" data-href="http://ffxiv-creator.com"></div></h1>
 			<button class="buttonShare facebookShare transition-3s hidden" type="button"></button>
 			<button class="buttonShare twitterShare transition-3s hidden" type="button"></button>
 			<button class="buttonShare googleShare transition-3s hidden" type="button"></button>
@@ -220,14 +220,14 @@
 			<button class="generator" type="button" title="Activate to find your perfect, random character match">Find Perfect Match</button>
 		</main>
 		
-		<section class="responseContainer hidden">
-			<section class="imageContainer">
-				<div class="jobResponse"></div>
-				<div class="handResponse"></div>
-				<div class="raceResponse"></div>
+		<section class="responseContainer">
+			<section class="imageContainer transition-3s unrevealed">
+				<div class="jobResponse transition-3s"></div>
+				<div class="handResponse transition-3s"></div>
 			</section>
-			<h3 class="textyResponse">You should be a <span id="sex"></span><span id="clan"></span><span id="race"></span><span id="job"></span><span id="optional1" class="hidden">specializing as a(n) </span><span id="land"></span><span id="optional2" class="hidden"> and </span><span id="hand"></span></h3>
 		</section>
+		
+		<h3 class="textyResponse hidden">You should be a <span id="sex"></span><span id="clan"></span><span id="race"></span><span id="job"></span><span id="optional1" class="hidden">specializing as a(n) </span><span id="land"></span><span id="optional2" class="hidden"> and </span><span id="hand"></span></h3>
 		
 		<aside class="socialContainer">
 			<h4 class="socialTout">Share your results on <button class="facebookButton disabled" type="button">Facebook</button> and <button class="twitterButton disabled" type="button">Twitter</button></h4>
@@ -257,7 +257,10 @@
 		}(document, 'script', 'facebook-jssdk'));
 		</script>
 		
-		<h2 class="sidenote">This is a work in progress. Recently added Facebook and Twitter sharing, and a mobile version is forthcoming. Provide feedback and post your results in the comments below, and if you&rsquo;re able, why not throw me some bones to help build a smashing FFXIV computer? :)</h2>
+		<h2 class="sidenote">Version 1.4: Added mobile version and character picture results box.</h2>
+		<h2 class="sidenote">Version 1.2: Added social sharing of random results.</h2>
+		<h2 class="sidenote">Version 1.0: Random character generator introduced.</h2>
+		<h2 class="sidenote">Provide feedback and post your results in the comments and suggestions for improvements below.</h2>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin:2em 0 0 -50px;position:relative;left:50%;">
 		<input type="hidden" name="cmd" value="_s-xclick">
 		<input type="hidden" name="hosted_button_id" value="XP7KYRQTLU2YE">

@@ -1,0 +1,47 @@
+/* line 1, ../sass/collapsedDesktop.scss */
+body {
+  background: blue;
+}
+
+/* line 5, ../sass/collapsedDesktop.scss */
+.headerTout {
+  font-size: 3.5em;
+}
+
+/* line 9, ../sass/collapsedDesktop.scss */
+.mainContainer {
+  padding: 0 2em;
+}
+
+/* line 14, ../sass/collapsedDesktop.scss */
+.introduction,
+.sidenote {
+  font-size: 1.6em;
+}
+
+/* line 18, ../sass/collapsedDesktop.scss */
+.sexContainer {
+  margin-top: 9em;
+}
+
+/* line 24, ../sass/collapsedDesktop.scss */
+.raceContainer,
+.jobContainer,
+.handContainer {
+  width: 90%;
+}
+
+/* line 33, ../sass/collapsedDesktop.scss */
+.raceCheckbox,
+.jobCheckbox,
+.jobCheckboxBottomRow,
+.landCheckbox,
+.handCheckbox,
+.handCheckboxBottomRow {
+  margin-right: 1.5em;
+}
+
+/* line 37, ../sass/collapsedDesktop.scss */
+.socialTout {
+  font-size: 3em;
+}
