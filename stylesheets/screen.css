@@ -108,12 +108,13 @@ abbr {
 /* line 14, ../sass/desktop.scss */
 .creatorContainer {
   padding-top: 10em;
+  overflow: hidden;
   -webkit-box-shadow: 0 0 15px black;
   -moz-box-shadow: 0 0 15px black;
   box-shadow: 0 0 15px black;
 }
 
-/* line 19, ../sass/desktop.scss */
+/* line 20, ../sass/desktop.scss */
 .header {
   position: absolute;
   top: 0;
@@ -126,7 +127,7 @@ abbr {
   border-bottom: 2px solid white;
 }
 
-/* line 31, ../sass/desktop.scss */
+/* line 32, ../sass/desktop.scss */
 .headerFixed {
   position: fixed;
   -webkit-box-shadow: 0 0 15px black;
@@ -134,7 +135,7 @@ abbr {
   box-shadow: 0 0 15px black;
 }
 
-/* line 37, ../sass/desktop.scss */
+/* line 38, ../sass/desktop.scss */
 .headerTout,
 .socialTout {
   display: inline-block;
@@ -145,7 +146,7 @@ abbr {
   text-align: center;
 }
 
-/* line 46, ../sass/desktop.scss */
+/* line 47, ../sass/desktop.scss */
 .buttonShare {
   margin: 0 4% 0 0;
   padding: 0;
@@ -157,7 +158,7 @@ abbr {
   text-align: center;
 }
 
-/* line 58, ../sass/desktop.scss */
+/* line 59, ../sass/desktop.scss */
 .buttonShare:hover,
 .buttonShare:active {
   -webkit-transform: rotate(5deg) scale(1.1);
@@ -166,7 +167,7 @@ abbr {
   transform: rotate(5deg) scale(1.1);
 }
 
-/* line 65, ../sass/desktop.scss */
+/* line 66, ../sass/desktop.scss */
 .mainContainer {
   position: relative;
   margin: 0 auto;
@@ -174,7 +175,7 @@ abbr {
   z-index: 1;
 }
 
-/* line 73, ../sass/desktop.scss */
+/* line 74, ../sass/desktop.scss */
 .introduction,
 .sidenote {
   margin: 0 auto;
@@ -184,7 +185,7 @@ abbr {
   text-align: justify;
 }
 
-/* line 81, ../sass/desktop.scss */
+/* line 82, ../sass/desktop.scss */
 .sidenote {
   padding-bottom: 0.5em;
   width: 80%;
@@ -192,7 +193,7 @@ abbr {
   font-style: italic;
 }
 
-/* line 92, ../sass/desktop.scss */
+/* line 93, ../sass/desktop.scss */
 .sexContainer,
 .raceContainer,
 .jobContainer,
@@ -214,24 +215,24 @@ abbr {
   box-shadow: 5px 5px 10px #555555;
 }
 
-/* line 103, ../sass/desktop.scss */
+/* line 104, ../sass/desktop.scss */
 .sexContainer {
   width: 30%;
 }
 
-/* line 108, ../sass/desktop.scss */
+/* line 109, ../sass/desktop.scss */
 .jobContainer,
 .handContainer {
   margin-top: 3em;
   height: 11em;
 }
 
-/* line 113, ../sass/desktop.scss */
+/* line 114, ../sass/desktop.scss */
 .landContainer {
   margin-top: 3em;
 }
 
-/* line 121, ../sass/desktop.scss */
+/* line 122, ../sass/desktop.scss */
 .jobContainer:after,
 .raceContainer:after,
 .sexContainer:after,
@@ -250,14 +251,14 @@ abbr {
   z-index: -1;
 }
 
-/* line 135, ../sass/desktop.scss */
+/* line 136, ../sass/desktop.scss */
 .sexContainer:after {
   content: 'SEX';
   left: -0.9em;
   font-size: 4em;
 }
 
-/* line 141, ../sass/desktop.scss */
+/* line 142, ../sass/desktop.scss */
 .raceContainer:after {
   content: 'RACES';
   top: 28%;
@@ -265,19 +266,19 @@ abbr {
   font-size: 3em;
 }
 
-/* line 148, ../sass/desktop.scss */
+/* line 149, ../sass/desktop.scss */
 .landContainer:after {
   content: 'LAND';
   left: -1.05em;
   font-size: 3em;
 }
 
-/* line 154, ../sass/desktop.scss */
+/* line 155, ../sass/desktop.scss */
 .handContainer:after {
   content: 'HAND';
 }
 
-/* line 159, ../sass/desktop.scss */
+/* line 160, ../sass/desktop.scss */
 .sexPortrait,
 .racePortrait {
   position: absolute;
@@ -293,7 +294,7 @@ abbr {
   opacity: 0;
 }
 
-/* line 173, ../sass/desktop.scss */
+/* line 174, ../sass/desktop.scss */
 .sexPortrait {
   top: -220%;
   margin-left: -38px;
@@ -302,39 +303,39 @@ abbr {
   background-image: url(images/female.png);
 }
 
-/* line 181, ../sass/desktop.scss */
+/* line 182, ../sass/desktop.scss */
 .malePortrait {
   background-image: url(images/male.png);
 }
 
-/* line 185, ../sass/desktop.scss */
+/* line 186, ../sass/desktop.scss */
 .hyurPortrait {
   background-image: url(images/races/hyur.png);
 }
 
-/* line 189, ../sass/desktop.scss */
+/* line 190, ../sass/desktop.scss */
 .lalafellPortrait {
   background-image: url(images/races/lalafell.png);
 }
 
-/* line 193, ../sass/desktop.scss */
+/* line 194, ../sass/desktop.scss */
 .miqotePortrait {
   background-image: url(images/races/miqote.png);
 }
 
-/* line 197, ../sass/desktop.scss */
+/* line 198, ../sass/desktop.scss */
 .roegadynPortrait {
   background-image: url(images/races/roegadyn.png);
 }
 
-/* line 202, ../sass/desktop.scss */
+/* line 203, ../sass/desktop.scss */
 .sexPortraitReveal,
 .racePortraitReveal {
   filter: alpha(opacity=100);
   opacity: 1;
 }
 
-/* line 213, ../sass/desktop.scss */
+/* line 214, ../sass/desktop.scss */
 .sexCheckbox,
 .raceCheckbox,
 .jobCheckbox,
@@ -350,19 +351,19 @@ abbr {
   cursor: pointer;
 }
 
-/* line 222, ../sass/desktop.scss */
+/* line 223, ../sass/desktop.scss */
 .sexCheckbox {
   margin-right: 23%;
   margin-left: 8%;
   width: 30%;
 }
 
-/* line 228, ../sass/desktop.scss */
+/* line 229, ../sass/desktop.scss */
 .sexCheckbox:last-child {
   margin-left: 0;
 }
 
-/* line 235, ../sass/desktop.scss */
+/* line 236, ../sass/desktop.scss */
 .jobCheckbox,
 .jobCheckboxBottomRow,
 .handCheckbox,
@@ -370,18 +371,18 @@ abbr {
   width: 16%;
 }
 
-/* line 240, ../sass/desktop.scss */
+/* line 241, ../sass/desktop.scss */
 .jobCheckboxBottomRow,
 .handCheckboxBottomRow {
   margin-top: 2em;
 }
 
-/* line 244, ../sass/desktop.scss */
+/* line 245, ../sass/desktop.scss */
 .landCheckbox {
   width: 21%;
 }
 
-/* line 253, ../sass/desktop.scss */
+/* line 254, ../sass/desktop.scss */
 .buttonShare:last-child,
 .sexCheckbox:last-child,
 .raceCheckbox:last-child,
@@ -391,7 +392,7 @@ abbr {
   margin-right: 0;
 }
 
-/* line 262, ../sass/desktop.scss */
+/* line 263, ../sass/desktop.scss */
 .checkBox,
 .sexLabel,
 .raceLabel,
@@ -406,12 +407,12 @@ abbr {
   z-index: 2;
 }
 
-/* line 271, ../sass/desktop.scss */
+/* line 272, ../sass/desktop.scss */
 .checkBoxAll {
   border-right: 1px solid #cccccc;
 }
 
-/* line 279, ../sass/desktop.scss */
+/* line 280, ../sass/desktop.scss */
 .sexLabel,
 .raceLabel,
 .jobLabel,
@@ -421,7 +422,7 @@ abbr {
   color: #333333;
 }
 
-/* line 286, ../sass/desktop.scss */
+/* line 287, ../sass/desktop.scss */
 .generator,
 .facebookButton,
 .twitterButton {
@@ -444,17 +445,17 @@ abbr {
   cursor: pointer;
 }
 
-/* line 302, ../sass/desktop.scss */
+/* line 303, ../sass/desktop.scss */
 .generator:hover {
   background: #3565a8;
 }
 
-/* line 306, ../sass/desktop.scss */
+/* line 307, ../sass/desktop.scss */
 .generator:active {
   background: #29a489;
 }
 
-/* line 310, ../sass/desktop.scss */
+/* line 311, ../sass/desktop.scss */
 .textyResponse {
   margin: 1em auto 0;
   padding: 0 0 1em 0;
@@ -464,7 +465,7 @@ abbr {
   text-align: center;
 }
 
-/* line 324, ../sass/desktop.scss */
+/* line 325, ../sass/desktop.scss */
 #sex,
 #clan,
 #race,
@@ -474,7 +475,7 @@ abbr {
   border-bottom: 2px dotted #3565a8;
 }
 
-/* line 328, ../sass/desktop.scss */
+/* line 329, ../sass/desktop.scss */
 .responseContainer {
   position: relative;
   margin: 3em auto;
@@ -489,7 +490,7 @@ abbr {
   border-radius: 3px;
 }
 
-/* line 338, ../sass/desktop.scss */
+/* line 339, ../sass/desktop.scss */
 .imageContainer {
   position: relative;
   width: 100%;
@@ -499,14 +500,14 @@ abbr {
   overflow: hidden;
 }
 
-/* line 347, ../sass/desktop.scss */
+/* line 348, ../sass/desktop.scss */
 .imageContainer.opaque {
   margin-bottom: -30px;
   filter: alpha(opacity=0);
   opacity: 0;
 }
 
-/* line 353, ../sass/desktop.scss */
+/* line 354, ../sass/desktop.scss */
 .imageContainer.revealed {
   margin-bottom: 0;
   background-position: center bottom;
@@ -514,7 +515,7 @@ abbr {
   opacity: 1;
 }
 
-/* line 361, ../sass/desktop.scss */
+/* line 362, ../sass/desktop.scss */
 .jobResponse,
 .handResponse {
   position: absolute;
@@ -528,23 +529,23 @@ abbr {
   background-color: red;
 }
 
-/* line 373, ../sass/desktop.scss */
+/* line 374, ../sass/desktop.scss */
 .jobResponse.revealed {
   left: 5%;
 }
 
-/* line 377, ../sass/desktop.scss */
+/* line 378, ../sass/desktop.scss */
 .handResponse {
   left: auto;
   right: -35%;
 }
 
-/* line 382, ../sass/desktop.scss */
+/* line 383, ../sass/desktop.scss */
 .handResponse.revealed {
   right: 5%;
 }
 
-/* line 387, ../sass/desktop.scss */
+/* line 388, ../sass/desktop.scss */
 .socialContainer {
   position: relative;
   margin: 0 auto;
@@ -553,14 +554,14 @@ abbr {
   height: 15em;
 }
 
-/* line 395, ../sass/desktop.scss */
+/* line 396, ../sass/desktop.scss */
 .socialTout {
   display: block;
   padding: 0;
   font-size: 3em;
 }
 
-/* line 402, ../sass/desktop.scss */
+/* line 403, ../sass/desktop.scss */
 .facebookButton,
 .twitterButton {
   left: auto;
@@ -571,33 +572,33 @@ abbr {
   line-height: 1.6;
 }
 
-/* line 411, ../sass/desktop.scss */
+/* line 412, ../sass/desktop.scss */
 .facebookButton {
   background: #3b5998;
 }
 
-/* line 415, ../sass/desktop.scss */
+/* line 416, ../sass/desktop.scss */
 .twitterButton {
   background: #00acee;
 }
 
-/* line 420, ../sass/desktop.scss */
+/* line 421, ../sass/desktop.scss */
 .facebookButton:hover,
 .twitterButton:hover {
   background: #ddd;
 }
 
-/* line 424, ../sass/desktop.scss */
+/* line 425, ../sass/desktop.scss */
 .facebookButton:active {
   background: #3b5998;
 }
 
-/* line 428, ../sass/desktop.scss */
+/* line 429, ../sass/desktop.scss */
 .twitterButton:active {
   background: #00acee;
 }
 
-/* line 436, ../sass/desktop.scss */
+/* line 437, ../sass/desktop.scss */
 .disabled,
 .facebookButton:active .disabled,
 .facebookButton:hover .disabled,
@@ -609,7 +610,7 @@ abbr {
   background: #ddd;
 }
 
-/* line 443, ../sass/desktop.scss */
+/* line 444, ../sass/desktop.scss */
 .amazonAd {
   position: relative;
   margin: 0 auto;
@@ -619,7 +620,7 @@ abbr {
   clear: both;
 }
 
-/* line 452, ../sass/desktop.scss */
+/* line 453, ../sass/desktop.scss */
 #disqus_thread {
   margin: 0 auto;
   width: 80%;
@@ -642,39 +643,34 @@ abbr {
 }*/
 @media screen and (max-width: 1100px) {
   /* line 1, ../sass/collapsedDesktop.scss */
-  body {
-    background: blue;
-  }
-
-  /* line 5, ../sass/collapsedDesktop.scss */
   .headerTout {
     font-size: 3.5em;
   }
 
-  /* line 9, ../sass/collapsedDesktop.scss */
+  /* line 5, ../sass/collapsedDesktop.scss */
   .mainContainer {
     padding: 0 2em;
   }
 
-  /* line 14, ../sass/collapsedDesktop.scss */
+  /* line 10, ../sass/collapsedDesktop.scss */
   .introduction,
   .sidenote {
     font-size: 1.6em;
   }
 
-  /* line 18, ../sass/collapsedDesktop.scss */
+  /* line 14, ../sass/collapsedDesktop.scss */
   .sexContainer {
     margin-top: 9em;
   }
 
-  /* line 24, ../sass/collapsedDesktop.scss */
+  /* line 20, ../sass/collapsedDesktop.scss */
   .raceContainer,
   .jobContainer,
   .handContainer {
     width: 90%;
   }
 
-  /* line 33, ../sass/collapsedDesktop.scss */
+  /* line 29, ../sass/collapsedDesktop.scss */
   .raceCheckbox,
   .jobCheckbox,
   .jobCheckboxBottomRow,
@@ -684,28 +680,23 @@ abbr {
     margin-right: 1.5em;
   }
 
-  /* line 37, ../sass/collapsedDesktop.scss */
+  /* line 33, ../sass/collapsedDesktop.scss */
   .socialTout {
     font-size: 3em;
   }
 }
 @media screen and (max-width: 800px) {
   /* line 1, ../sass/tablety.scss */
-  body {
-    background: green;
-  }
-
-  /* line 5, ../sass/tablety.scss */
   .creatorContainer {
     width: 90%;
   }
 
-  /* line 9, ../sass/tablety.scss */
+  /* line 5, ../sass/tablety.scss */
   .headerTout {
     font-size: 3em;
   }
 
-  /* line 16, ../sass/tablety.scss */
+  /* line 12, ../sass/tablety.scss */
   .sexContainer,
   .raceContainer,
   .landContainer,
@@ -714,30 +705,30 @@ abbr {
     height: 4em;
   }
 
-  /* line 22, ../sass/tablety.scss */
+  /* line 18, ../sass/tablety.scss */
   .jobContainer,
   .handContainer {
     margin-top: 2em;
     height: 13em;
   }
 
-  /* line 27, ../sass/tablety.scss */
+  /* line 23, ../sass/tablety.scss */
   .handContainer {
     height: 10em;
   }
 
-  /* line 31, ../sass/tablety.scss */
+  /* line 27, ../sass/tablety.scss */
   .landContainer {
     margin-top: 2em;
   }
 
-  /* line 36, ../sass/tablety.scss */
+  /* line 32, ../sass/tablety.scss */
   .sexPortrait,
   .racePortrait {
     top: -380%;
   }
 
-  /* line 45, ../sass/tablety.scss */
+  /* line 41, ../sass/tablety.scss */
   .raceCheckbox,
   .jobCheckbox,
   .jobCheckboxBottomRow,
@@ -747,7 +738,7 @@ abbr {
     margin-right: 1em;
   }
 
-  /* line 54, ../sass/tablety.scss */
+  /* line 50, ../sass/tablety.scss */
   .checkBox,
   .sexLabel,
   .raceLabel,
@@ -757,12 +748,12 @@ abbr {
     font: 400 1.6em/1 "Century Gothic", Arial, sans-serif;
   }
 
-  /* line 58, ../sass/tablety.scss */
+  /* line 54, ../sass/tablety.scss */
   .handCheckboxBottomRow:nth-child(3n) {
     margin-right: 3em;
   }
 
-  /* line 62, ../sass/tablety.scss */
+  /* line 58, ../sass/tablety.scss */
   .generator {
     margin-left: -3.5em;
     width: 7em;
@@ -771,28 +762,23 @@ abbr {
     line-height: 1.7;
   }
 
-  /* line 70, ../sass/tablety.scss */
+  /* line 66, ../sass/tablety.scss */
   .socialContainer {
     width: 90%;
   }
 
-  /* line 74, ../sass/tablety.scss */
+  /* line 70, ../sass/tablety.scss */
   .socialTout {
     font-size: 2.5em;
   }
 
-  /* line 78, ../sass/tablety.scss */
+  /* line 74, ../sass/tablety.scss */
   .amazonAd {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
   /* line 1, ../sass/mobile.scss */
-  body {
-    background: red;
-  }
-
-  /* line 5, ../sass/mobile.scss */
   .creatorContainer {
     width: 100%;
     -webkit-box-shadow: none;
@@ -800,7 +786,7 @@ abbr {
     box-shadow: none;
   }
 
-  /* line 13, ../sass/mobile.scss */
+  /* line 9, ../sass/mobile.scss */
   .sexContainer,
   .raceContainer,
   .landContainer,
@@ -808,7 +794,7 @@ abbr {
     margin-top: 11em;
   }
 
-  /* line 20, ../sass/mobile.scss */
+  /* line 16, ../sass/mobile.scss */
   .raceContainer,
   .jobContainer,
   .landContainer,
@@ -818,18 +804,18 @@ abbr {
     clear: both;
   }
 
-  /* line 26, ../sass/mobile.scss */
+  /* line 22, ../sass/mobile.scss */
   .raceContainer {
     width: 100%;
   }
 
-  /* line 31, ../sass/mobile.scss */
+  /* line 27, ../sass/mobile.scss */
   .landContainer,
   .handContainer {
     margin-top: 2em;
   }
 
-  /* line 40, ../sass/mobile.scss */
+  /* line 36, ../sass/mobile.scss */
   .checkBox,
   .sexLabel,
   .raceLabel,
@@ -839,22 +825,22 @@ abbr {
     font-size: 1.4em;
   }
 
-  /* line 44, ../sass/mobile.scss */
+  /* line 40, ../sass/mobile.scss */
   .handCheckboxBottomRow:nth-child(n) {
     margin-right: 2em;
   }
 
-  /* line 48, ../sass/mobile.scss */
+  /* line 44, ../sass/mobile.scss */
   .handCheckboxBottomRow:nth-child(3n) {
     margin-right: 4em;
   }
 
-  /* line 52, ../sass/mobile.scss */
+  /* line 48, ../sass/mobile.scss */
   .socialContainer {
     height: 7em;
   }
 
-  /* line 56, ../sass/mobile.scss */
+  /* line 52, ../sass/mobile.scss */
   .socialTout {
     font-size: 2.0em;
   }

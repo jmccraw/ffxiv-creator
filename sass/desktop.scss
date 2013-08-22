@@ -13,6 +13,7 @@
 
 .creatorContainer {
 	padding-top: 10em;
+	overflow: hidden;
 	@include box-shadow(0 0 15px #000);
 }
 

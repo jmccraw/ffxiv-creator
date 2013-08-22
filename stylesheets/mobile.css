@@ -1,11 +1,13 @@
 /*
 Syntax error: Undefined mixin 'box-shadow'.
-        on line 7 of /Users/Abyo/ffxiv-creator/sass/mobile.scss, in `box-shadow'
-        from line 7 of /Users/Abyo/ffxiv-creator/sass/mobile.scss
+        on line 3 of /Users/Abyo/ffxiv-creator/sass/mobile.scss, in `box-shadow'
+        from line 3 of /Users/Abyo/ffxiv-creator/sass/mobile.scss
+
+1: /Users/Abyo/ffxiv-creator/sass/mobile.scss
 
 Backtrace:
-/Users/Abyo/ffxiv-creator/sass/mobile.scss:7:in `box-shadow'
-/Users/Abyo/ffxiv-creator/sass/mobile.scss:7
+/Users/Abyo/ffxiv-creator/sass/mobile.scss:3:in `box-shadow'
+/Users/Abyo/ffxiv-creator/sass/mobile.scss:3
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:251:in `visit_mixin'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/Abyo/.rvm/gems/ruby-1.9.2-p0/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:98:in `visit'
@@ -74,4 +76,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'box-shadow'.\A         on line 7 of /Users/Abyo/ffxiv-creator/sass/mobile.scss, in `box-shadow'\A         from line 7 of /Users/Abyo/ffxiv-creator/sass/mobile.scss"; }
+  content: "Syntax error: Undefined mixin 'box-shadow'.\A         on line 3 of /Users/Abyo/ffxiv-creator/sass/mobile.scss, in `box-shadow'\A         from line 3 of /Users/Abyo/ffxiv-creator/sass/mobile.scss\A \A 1: /Users/Abyo/ffxiv-creator/sass/mobile.scss"; }

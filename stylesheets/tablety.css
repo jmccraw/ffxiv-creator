@@ -1,19 +1,14 @@
 /* line 1, ../sass/tablety.scss */
-body {
-  background: green;
-}
-
-/* line 5, ../sass/tablety.scss */
 .creatorContainer {
   width: 90%;
 }
 
-/* line 9, ../sass/tablety.scss */
+/* line 5, ../sass/tablety.scss */
 .headerTout {
   font-size: 3em;
 }
 
-/* line 16, ../sass/tablety.scss */
+/* line 12, ../sass/tablety.scss */
 .sexContainer,
 .raceContainer,
 .landContainer,
@@ -22,30 +17,30 @@ body {
   height: 4em;
 }
 
-/* line 22, ../sass/tablety.scss */
+/* line 18, ../sass/tablety.scss */
 .jobContainer,
 .handContainer {
   margin-top: 2em;
   height: 13em;
 }
 
-/* line 27, ../sass/tablety.scss */
+/* line 23, ../sass/tablety.scss */
 .handContainer {
   height: 10em;
 }
 
-/* line 31, ../sass/tablety.scss */
+/* line 27, ../sass/tablety.scss */
 .landContainer {
   margin-top: 2em;
 }
 
-/* line 36, ../sass/tablety.scss */
+/* line 32, ../sass/tablety.scss */
 .sexPortrait,
 .racePortrait {
   top: -380%;
 }
 
-/* line 45, ../sass/tablety.scss */
+/* line 41, ../sass/tablety.scss */
 .raceCheckbox,
 .jobCheckbox,
 .jobCheckboxBottomRow,
@@ -55,7 +50,7 @@ body {
   margin-right: 1em;
 }
 
-/* line 54, ../sass/tablety.scss */
+/* line 50, ../sass/tablety.scss */
 .checkBox,
 .sexLabel,
 .raceLabel,
@@ -65,12 +60,12 @@ body {
   font: 400 1.6em/1 "Century Gothic", Arial, sans-serif;
 }
 
-/* line 58, ../sass/tablety.scss */
+/* line 54, ../sass/tablety.scss */
 .handCheckboxBottomRow:nth-child(3n) {
   margin-right: 3em;
 }
 
-/* line 62, ../sass/tablety.scss */
+/* line 58, ../sass/tablety.scss */
 .generator {
   margin-left: -3.5em;
   width: 7em;
@@ -79,17 +74,17 @@ body {
   line-height: 1.7;
 }
 
-/* line 70, ../sass/tablety.scss */
+/* line 66, ../sass/tablety.scss */
 .socialContainer {
   width: 90%;
 }
 
-/* line 74, ../sass/tablety.scss */
+/* line 70, ../sass/tablety.scss */
 .socialTout {
   font-size: 2.5em;
 }
 
-/* line 78, ../sass/tablety.scss */
+/* line 74, ../sass/tablety.scss */
 .amazonAd {
   display: none;
 }
